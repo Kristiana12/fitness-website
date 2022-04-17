@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLUB. | Gym | Stay Fit</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="main-navigation">
+      <div class="container">
+        <div class="main-navigation__logo logo">
+          <p><span class="red">C</span>LUB.</p>
+        </div>
+        <!-- DESKTOP -->
+        <ul class="main-navigation__list">
+          <li class="main-navigation__list--item">
+            <a class="main-navigation__list--item__link" href="#">Home</a>
+          </li>
+          <li class="main-navigation__list--item">
+            <a class="main-navigation__list--item__link" href="#coaches"
+              >Coaches</a
+            >
+          </li>
+          <li class="main-navigation__list--item">
+            <a class="main-navigation__list--item__link" href="#classes"
+              >Classes</a
+            >
+          </li>
+          <li class="main-navigation__list--item">
+            <a class="main-navigation__list--item__link" href="#pricing"
+              >Pricing</a
+            >
+          </li>
+          <li class="main-navigation__list--item">
+            <div class="cta-primary">
+              <a class="main-navigation__list--item__link" href="#classes"
+                >Book now</a
+              >
+            </div>
+          </li>
+        </ul>
+        <!-- MOBILE -->
+        <div class="hamburger" aria-label="menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MOBILE NAV -->
+    <!-- <nav class="main-navigation__mobile">
+      <ul class="main-navigation__mobile--list">
+        <li class="main-navigation__mobile--item"><a href="#">Home</a></li>
+        <li class="main-navigation__mobile--item">
+          <a href="#coaches">Coaches</a>
+        </li>
+        <li class="main-navigation__mobile--item">
+          <a href="#classes">Classes</a>
+        </li>
+        <li class="main-navigation__mobile--item">
+          <a href="#pricing">Pricing</a>
+        </li>
+        <li class="main-navigation__mobile--item">
+          <div class="cta-primary">
+            <a class="main-navigation__list--item__link" href="#classes"
+              >Book now</a
+            >
+          </div>
+        </li>
+      </ul>
+    </nav> -->
+
+    <header class="hero">
+      <h1 class="hero__title">Shape your body</h1>
+      <p class="hero__subtitle">
+        It’ s time to get serious. No more excuses. Today you are going to write
+        a new capital in your life!
+      </p>
+      <a href="#classes" class="cta-primary hero-btn">Start now</a>
+    </header>
+    <main>
+      <!-- SPONSORS -->
+      <section class="sponsors">
+        <div class="container">
+          <img
+            srcset="
+              images/sponsors/rebook-260.png 260w,
+              images/sponsors/rebook-130.png 130w
+            "
+            sizes="(min-width: 1000px) 130px,
+                    (min-width: 720px) 100px,
+                    85vw"
+            src="images/sponsors/rebook-130.png"
+            alt="rebook"
+          />
+          <img
+            srcset="
+              images/sponsors/addidas-260.png 260w,
+              images/sponsors/addidas-130.png 130w
+            "
+            sizes="(min-width: 1000px) 130px,
+                  (min-width: 720px) 100px,
+                  85vw"
+            src="images/sponsors/addidas-130.png"
+            alt="addidas"
+          />
+          <img
+            srcset="
+              images/sponsors/herbalife-260.png 260w,
+              images/sponsors/herbalife-130.png 130w
+            "
+            sizes="(min-width: 1000px) 130px,
+                (min-width: 720px) 100px,
+                85vw"
+            src="images/sponsors/herbalife-130.png"
+            alt="herbalife"
+          />
+          <img
+            srcset="
+              images/sponsors/nike-260.png 260w,
+              images/sponsors/nike-130.png 130w
+            "
+            sizes="(min-width: 1000px) 130px,
+              (min-width: 720px) 100px,
+              85vw"
+            src="images/sponsors/nike-130.png"
+            alt="nike"
+          />
+        </div>
+      </section>
+      <!-- COACHES -->
+      <section id="coaches" class="padding-section">
+        <div class="container">
+          <!-- SECTION TITLE -->
+          <h2 class="coaches__title">
+            Meet our <span class="red block">Coaches</span>
+          </h2>
+
+          <!-- Coach 1 -->
+          <div class="coaches__coach flex">
+            <img
+              class="coaches__img"
+              srcset="
+                images/coaches/mike_johson-1000.jpg,
+                1000w,
+                images/coaches/mike_johson-700.jpg,
+                700w,
+                images/coaches/mike_johson-500.jpg,
+                500w,
+                images/coaches/mike_johson-350.jpg,
+                350w
+              "
+              sizes="(min-width: 1140px) 500px,
+              (min-width: 650px) 50vw,
+            85vw"
+              src="images/coaches/mike_johson-350.jpg"
+              alt="mike johson"
+            />
+
+            <div class="coaches__content">
+              <h3 class="coaches__content--title">
+                <span class="red">Mike</span> Johson
+              </h3>
+              <p class="coaches__content--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat iure suscipit voluptatem modi blanditiis maxime esse
+                reprehenderit, vero odit fugit culpa voluptate qui ratione sequi
+                doloribus ipsa. Vel ad nemo quia ratione tenetur esse iure
+                tempora repudiandae atque cupiditate in, sequi vero.
+              </p>
+            </div>
+          </div>
+
+          <!-- Coach 2 -->
+          <div class="coaches__coach flex-reverse">
+            <img
+              class="coaches__img"
+              srcset="
+                images/coaches/matt_tyler-1000.jpg,
+                1000w,
+                images/coaches/matt_tyler-700.jpg,
+                700w,
+                images/coaches/matt_tyler-500.jpg,
+                500w,
+                images/coaches/matt_tyler-350.jpg,
+                350w
+              "
+              sizes="(min-width: 1140px) 500px,
+              (min-width: 650px) 50vw,
+          85vw"
+              src="images/coaches/matt_tyler-350.jpg"
+              alt="matt tyler"
+            />
+            <div class="coaches__content">
+              <h3 class="coaches__content--title">
+                <span class="red">Matt</span> Tyler
+              </h3>
+              <p class="coaches__content--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat iure suscipit voluptatem modi blanditiis maxime esse
+                reprehenderit, vero odit fugit culpa voluptate qui ratione sequi
+                doloribus ipsa. Vel ad nemo quia ratione tenetur esse iure
+                tempora.
+              </p>
+            </div>
+          </div>
+
+          <!-- Coach 3 -->
+          <div class="coaches__coach flex">
+            <img
+              class="coaches__img"
+              srcset="
+                images/coaches/kate-1000.jpg,
+                1000w,
+                images/coaches/kate-700.jpg,
+                700w,
+                images/coaches/kate-500.jpg,
+                500w,
+                images/coaches/kate-350.jpg,
+                350w
+              "
+              sizes="(min-width: 1140px) 500px,
+              (min-width: 650px) 50vw,
+          85vw"
+              src="images/coaches/kate-350.jpg"
+              alt="kate williams"
+            />
+            <div class="coaches__content">
+              <h3 class="coaches__content--title">
+                <span class="red">Kate</span> Williams
+              </h3>
+              <p class="coaches__content--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat iure suscipit voluptatem modi blanditiis maxime esse
+                reprehenderit, vero odit fugit culpa voluptate qui ratione sequi
+                doloribus ipsa. Vel ad nemo quia ratione tenetur esse iure
+                tempora repudiandae.
+              </p>
+            </div>
+          </div>
+
+          <!-- Coach 4 -->
+          <div class="coaches__coach flex-reverse">
+            <img
+              class="coaches__img"
+              srcset="
+                images/coaches/alyssa-1000.jpg,
+                1000w,
+                images/coaches/alyssa-700.jpg,
+                700w,
+                images/coaches/alyssa-500.jpg,
+                500w,
+                images/coaches/alyssa-350.jpg,
+                350w
+              "
+              sizes="(min-width: 1140px) 500px,
+              (min-width: 650px) 50vw,
+          85vw"
+              src="images/coaches/alyssa-350.jpg"
+              alt="alyssa mendosa"
+            />
+            <div class="coaches__content">
+              <h3 class="coaches__content--title">
+                <span class="red">Alyssa</span> Mendosa
+              </h3>
+              <p class="coaches__content--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem
+                ipsum dolor sit amet. Lorem ipsum dolor sit amet. Placeat iure
+                suscipit voluptatem modi blanditiis maxime esse reprehenderit,
+                vero odit fugit culpa voluptate qui ratione sequi doloribus
+                ipsa.
+              </p>
+            </div>
+          </div>
+
+          <!-- Coach 5 -->
+          <div class="coaches__coach flex">
+            <img
+              class="coaches__img"
+              srcset="
+                images/coaches/robert-1000.jpg,
+                1000w,
+                images/coaches/robert-700.jpg,
+                700w,
+                images/coaches/robert-500.jpg,
+                500w,
+                images/coaches/robert-350.jpg,
+                350w
+              "
+              sizes="(min-width: 1140px) 500px,
+              (min-width: 650px) 50vw,
+          85vw"
+              src="images/coaches/robert-350.jpg"
+              alt="robert smith"
+            />
+            <div class="coaches__content">
+              <h3 class="coaches__content--title">
+                <span class="red">Robert</span> Smith
+              </h3>
+              <p class="coaches__content--para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat iure suscipit voluptatem modi blanditiis maxime esse
+                reprehenderit, vero odit fugit culpa voluptate qui ratione sequi
+                doloribus ipsa. Vel ad nemo quia ratione tenetur esse iure
+                tempora repudiandae atque cupiditate in, sequi consectetur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLASSES -->
+      <section id="classes" class="padding-section">
+        <div class="container">
+          <h2 class="classes__title">
+            Explore Our <span class="red block">Classes</span>
+          </h2>
+          <div class="classes__cards">
+            <!-- First Class -->
+            <div class="classes__card classes__card-1">
+              <h4 class="classes__card--title">
+                Build <span class="red block">Muscles</span>
+              </h4>
+              <p class="classes__card--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                alias corporis ullam, vel architecto, corrupti qui enim, earum
+                quo reprehenderit voluptatum distinctio similique reiciendis
+                dolore? Voluptatem alias non harum veritatis?
+              </p>
+
+              <a href="#" class="cta-primary btn-classes">See More</a>
+            </div>
+
+            <!-- Second Class -->
+            <div class="classes__card classes__card-2">
+              <h4 class="classes__card--title">
+                Build <span class="red block">Endurance</span>
+              </h4>
+              <p class="classes__card--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                alias corporis ullam, vel architecto, corrupti qui enim, earum
+                quo reprehenderit voluptatum distinctio similique reiciendis
+                dolore? Voluptatem alias non harum veritatis?
+              </p>
+
+              <a href="#" class="cta-primary btn-classes">See More</a>
+            </div>
+
+            <!-- Third Class -->
+            <div class="classes__card classes__card-3">
+              <h4 class="classes__card--title">
+                Build <span class="red block">Healthy Habits</span>
+              </h4>
+              <p class="classes__card--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                alias corporis ullam, vel architecto, corrupti qui enim, earum
+                quo reprehenderit voluptatum distinctio similique reiciendis
+                dolore? Voluptatem alias non harum veritatis?
+              </p>
+
+              <a href="#" class="cta-primary btn-classes">See More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section id="pricing" class="padding-section">
+        <div class="container">
+          <h2 class="pricing__title">Pricing</h2>
+
+          <div class="pricing__cards">
+            <!-- PRICING CARD 1 -->
+            <div class="pricing__card">
+              <header class="pricing__card--header">
+                <h5 class="pricing__card--header__title">Single Pass</h5>
+                <p class="pricing__card--header__price">19.99<span>$</span></p>
+                <p class="pricing__card--header__duration">/ visit</p>
+              </header>
+              <div class="pricing__card--body">
+                <div class="pricing__card--body__benefit">
+                  <img
+                    class="pricing__card--body__benefit--img"
+                    src="images/accepted.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <p>Visit a class one time</p>
+                </div>
+                <div class="pricing__card--body__benefit">
+                  <img
+                    class="pricing__card--body__benefit--img"
+                    src="images/accepted.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <p>Use all available equipments</p>
+                </div>
+              </div>
+              <a href="#" class="pricing__card--body__btn cta-secondary"
+                >Select</a
+              >
+            </div>
+
+            <!-- PRICING CARD 2 -->
+            <div class="pricing__card">
+              <header class="pricing__card--header">
+                <h5 class="pricing__card--header__title">Unlimited Member</h5>
+                <p class="pricing__card--header__price">149.99<span>$</span></p>
+                <p class="pricing__card--header__duration">/ month</p>
+              </header>
+              <div class="pricing__card--body">
+                <div class="pricing__card--body__benefit">
+                  <img
+                    class="pricing__card--body__benefit--img"
+                    src="images/accepted.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <p>Visit any class you desire anytime</p>
+                </div>
+                <div class="pricing__card--body__benefit">
+                  <img
+                    class="pricing__card--body__benefit--img"
+                    src="images/accepted.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <p>Use all available equipments</p>
+                </div>
+                <div class="pricing__card--body__benefit">
+                  <img
+                    class="pricing__card--body__benefit--img"
+                    src="images/accepted.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <p>Get personal help from the coaches</p>
+                </div>
+                <div class="pricing__card--body__benefit">
+                  <img
+                    class="pricing__card--body__benefit--img"
+                    src="images/accepted.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <p>Use the sauna after your workout</p>
+                </div>
+              </div>
+              <a href="#" class="pricing__card--body__btn cta-primary"
+                >Select</a
+              >
+            </div>
+
+            <!-- PRICING CARD 3 -->
+            <div class="pricing__card">
+              <header class="pricing__card--header">
+                <h5 class="pricing__card--header__title">Gold Member</h5>
+                <p class="pricing__card--header__price">99.99<span>$</span></p>
+                <p class="pricing__card--header__duration">/ month</p>
+              </header>
+              <div class="pricing__card--body">
+                <div class="pricing__card--body__benefit">
+                  <img
+                    class="pricing__card--body__benefit--img"
+                    src="images/accepted.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <p>Visit any class you desire anytime</p>
+                </div>
+                <div class="pricing__card--body__benefit">
+                  <img
+                    class="pricing__card--body__benefit--img"
+                    src="images/accepted.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <p>Use all available equipments</p>
+                </div>
+              </div>
+              <a href="#" class="pricing__card--body__btn cta-secondary"
+                >Select</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="padding-section">
+        <div class="container">
+          <h2 class="contact__title"><span class="red">Contact </span> Us</h2>
+          <h3 class="contact__subtitle"><spasn class="red">Text </spasn>Us</h3>
+          <div class="contact__form">
+            <form class="contact__form--left">
+              <div class="contact__form--info">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="contact__form--info">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="contact__form--info">
+                <label for="message">Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="contact__form--btn">
+                <button class="btn-submit" type="submit">Send</button>
+              </div>
+            </form>
+            <div class="contact__form--right">
+              <div class="contact__form--right-box">
+                <div class="contact__form--right-box__img">
+                  <img src="images/phone.svg" alt="" aria-hidden="true" />
+                </div>
+                <div class="contact__form--right-box__content">
+                  <h3 class="contact__title">
+                    <span class="red">Call </span>Us
+                  </h3>
+                  <p>+43048539524</p>
+                </div>
+              </div>
+              <div class="contact__form--right-box">
+                <div class="contact__form--right-box__img">
+                  <img src="images/location.svg" alt="" aria-hidden="true" />
+                </div>
+                <div class="contact__form--right-box__content">
+                  <h3 class="contact__title">
+                    <span class="red">Visit </span>Us
+                  </h3>
+
+                  <p>Mariahilferstr. 908</p>
+                  <p>St. Peter</p>
+                </div>
+              </div>
+              <div class="contact__form--right-box">
+                <h3><span class="red">Follow </span>Us</h3>
+                <ul class="social-icons">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/facebook.svg"
+                        alt="facebook"
+                        title="facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/instagram.svg"
+                        alt="instagram"
+                        title="instagram"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/twitter.svg"
+                        alt="twitter"
+                        title="twitter"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="images/youtube.svg"
+                        alt="youtube"
+                        title="youtube"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo logo">
+          <p><span class="red">C</span>LUB.</p>
+        </div>
+        <div class="footer__content">
+          <div class="footer__content--box">
+            <h4 class="footer__content--box__title">Classes</h4>
+            <ul class="footer__content--box__list">
+              <li><a href="#">Crossfit</a></li>
+              <li><a href="#">Cardio</a></li>
+              <li><a href="#">Yoga</a></li>
+              <li><a href="#">Cycling</a></li>
+            </ul>
+          </div>
+          <div class="footer__content--box">
+            <h4 class="footer__content--box__title">About</h4>
+            <ul class="footer__content--box__list">
+              <li><a href="#">Coaches</a></li>
+              <li><a href="#">Fitness</a></li>
+              <li><a href="#">Nutrition</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Personal Training</a></li>
+            </ul>
+          </div>
+          <div class="footer__content--box">
+            <h4 class="footer__content--box__title">Locations</h4>
+            <ul class="footer__content--box__list">
+              <li><a href="#">New York</a></li>
+              <li><a href="#">Los Angeles</a></li>
+              <li><a href="#">California</a></li>
+            </ul>
+          </div>
+          <div class="footer__content--box">
+            <h4 class="footer__content--box__title">Social</h4>
+            <ul class="footer__content--box__list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="footer__content--box">
+            <h4 class="footer__content--box__title">Legal</h4>
+            <ul class="footer__content--box__list">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
