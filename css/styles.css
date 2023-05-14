@@ -21,11 +21,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
-  /* font-family: 'Titillium Web', sans-serif;
-   */
   font-family: 'Smooch Sans', sans-serif;
   color: var(--clr-light);
   background-color: var(--clr-dark);
@@ -191,7 +193,6 @@ ul.main-navigation__list li:hover a {
 }
 
 /************ HEADER **********/
-
 header.hero {
   text-align: center;
 
