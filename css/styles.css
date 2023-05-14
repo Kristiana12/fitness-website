@@ -255,7 +255,6 @@ p.hero__subtitle {
 }
 
 .coaches__img {
-  width: 50vw;
   max-width: 500px;
   box-shadow: 10px 10px 2px var(--clr-primary);
 }
@@ -311,10 +310,10 @@ p.hero__subtitle {
 
 /* PRICING */
 .pricing__card {
-  /* max-width: 385px;
-  height: 500px; */
   border: 2px solid var(--clr-primary);
   position: relative;
+  flex-basis: 385px;
+  height: 450px;
 }
 
 /*PRICING CARDS */
@@ -322,11 +321,6 @@ p.hero__subtitle {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
-}
-
-.pricing__card {
-  flex-basis: 385px;
-  height: 450px;
 }
 
 .pricing__card:nth-of-type(2) {
@@ -744,7 +738,7 @@ footer.footer {
   }
 
   .sponsors .container img {
-    width: min(100vw, 100px);
+    width: min(100vw, 80px);
     object-fit: contain;
   }
 
