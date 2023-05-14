@@ -9,7 +9,8 @@
   --clr-dark-m2: rgba(20, 20, 20, 0.6);
   --clr-dark-m: rgba(20, 20, 20, 0.95);
   --clr-darker: #101010;
-  --color-light: #eee;
+  --clr-light: #eee;
+  --clr-white: #fff;
 }
 
 *,
@@ -26,7 +27,7 @@ body {
   /* font-family: 'Titillium Web', sans-serif;
    */
   font-family: 'Smooch Sans', sans-serif;
-  color: var(--color-light);
+  color: var(--clr-light);
   background-color: var(--clr-dark);
   margin: 80px 0 0;
   /* overflow-x: hidden; */
@@ -50,7 +51,7 @@ a:link,
 a:visited {
   display: inline-block;
   text-decoration: none;
-  color: var(--color-light);
+  color: var(--clr-light);
   font-family: 'Zen Dots', cursive;
   letter-spacing: 1px;
 }
@@ -83,22 +84,23 @@ img {
 .cta-primary {
   padding: 0.5em 0.7em;
   background-color: var(--clr-primary);
-  transition: all 0.3s;
+  transition: background-color 0.3s;
+}
+
+.cta-primary:hover {
+  color: var(--clr-primary);
+  background-color: var(--clr-white);
 }
 
 .cta-secondary {
   padding: 0.5rem 1rem;
   background-color: transparent;
   border: 2px solid var(--clr-primary);
-  transition: all 0.3s;
+  transition: background-color 0.3s;
 }
 
-.cta-primary:hover {
-  opacity: 0.8;
-}
-
-.cta-primary:active {
-  transform: scale(0.98);
+.cta-secondary:hover {
+  background-color: var(--clr-primary);
 }
 
 .padding-section {
@@ -140,18 +142,13 @@ ul.main-navigation__list {
   flex: 0.75;
 }
 
-ul.main-navigation__list a {
-  transition: color 0.5s, background-color 0.5s;
+ul.main-navigation__list li a {
+  color: var(--clr-white);
+  transition: color 0.3s;
 }
 
-ul.main-navigation__list a:hover,
-ul.main-navigation__list a:active {
+ul.main-navigation__list li:hover a {
   color: var(--clr-primary);
-}
-
-ul.main-navigation__list li:hover a,
-ul.main-navigation__list li:active a {
-  color: #fff;
 }
 
 /* MOBILE */
@@ -160,8 +157,9 @@ ul.main-navigation__list li:active a {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  height: 60px;
-  width: 45px;
+  gap: 10px;
+  /* height: 50px; */
+  width: 38px;
   background-color: var(--clr-dark);
   cursor: pointer;
   display: none;
@@ -170,28 +168,24 @@ ul.main-navigation__list li:active a {
 .hamburger .line {
   height: 3px;
   width: 100%;
-  background-color: var(--color-light);
+  background-color: var(--clr-light);
   transition: transform 0.3s ease-out, opacity 0.2s ease-in,
     height 0.2s ease-in-out;
   border-radius: 10px;
 }
 
-.hamburger .line:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-/* Hamburger Hover Effect */
-.hamburger:hover .line-1 {
+/* Hamburger Active Effect */
+.main-navigation__list.show + .hamburger .line-1 {
   transform: rotate(405deg) translate(15px, 10px);
   height: 4px;
 }
 
-.hamburger:hover .line-2 {
+.main-navigation__list.show + .hamburger .line-2 {
   transform: translateX(50px);
   opacity: 0;
 }
 
-.hamburger:hover .line-3 {
+.main-navigation__list.show + .hamburger .line-3 {
   transform: rotate(495deg) translate(-10px, 5px);
   height: 4px;
 }
@@ -342,7 +336,7 @@ p.hero__subtitle {
 }
 
 header.pricing__card--header {
-  color: var(--color-light);
+  color: var(--clr-light);
   background-color: var(--clr-primary);
   text-align: center;
   padding: 1.5em 0 1.2em;
@@ -459,7 +453,7 @@ img.pricing__card--body__benefit--img {
   outline: none;
   font-family: 'Zen Dots', sans-serif;
   font-size: inherit;
-  color: var(--color-light);
+  color: var(--clr-light);
   background-color: var(--clr-primary-m);
   cursor: pointer;
   transition: background-color 0.3s ease-in;
