@@ -10,10 +10,6 @@ I'm excited to present my very first project, which I've personally designed and
 
 <br/>
 
-## Screenshot
-
-![](screenshot.png)
-
 ### Built With
 
 <br/>
@@ -24,6 +20,13 @@ I'm excited to present my very first project, which I've personally designed and
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 <br/>
+
+
+## Screenshot
+
+![](screenshot.png)
+
+
 <br/>
 
 <!-- USAGE EXAMPLES -->
