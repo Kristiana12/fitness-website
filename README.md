@@ -3,6 +3,10 @@
 # .CLUB
 
 ## About The Project
+<br/>
+
+
+I'm excited to present my very first project, which I've personally designed and programmed! The project is build with HTML and CSS, and there's a tiny bit of Javascript for the mobile navigation toggle. I've embraced a desktop-first approach while ensuring full responsiveness, so users can enjoy a seamless experience no matter what device they're using.
 
 <br/>
 
